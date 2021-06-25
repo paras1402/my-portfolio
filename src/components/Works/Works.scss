@@ -1,3 +1,137 @@
 .works {
+  position: relative;
   background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100vh;
+
+  .arrow {
+    height: 50px;
+    position: absolute;
+
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    //
+    cursor: pointer;
+    animation: blink 1.5s infinite;
+
+    &.left {
+      z-index: 102;
+      left: 100px;
+      transform: rotate(180deg);
+      &:hover {
+        transform: scale(1.2) rotate(180deg);
+      }
+      @media (max-width: 768px) {
+        left: 20px;
+        bottom: 50px;
+      }
+    }
+    &.right {
+      &:hover {
+        transform: scale(1.2);
+      }
+      right: 100px;
+      @media (max-width: 768px) {
+        right: 20px;
+        bottom: 50px;
+      }
+    }
+  }
+
+  .slider {
+    // z-index: 101;
+
+    position: absolute;
+    height: 350px;
+    display: flex;
+    left: 0;
+    transition: all 1s ease-out;
+    .containeritem {
+      width: 100vw;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .items {
+        width: 700px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        // background-color: #123456;
+        background-image: linear-gradient(
+          to bottom right,
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0)
+        );
+        backdrop-filter: blur(7px);
+        box-shadow: 10px 10px 10px rgba(30, 30, 30, 0.1);
+        border-radius: 20px;
+        border-left: solid 1px rgba(255, 255, 255, 0.3);
+        border-top: solid 1px rgba(255, 255, 255, 0.8);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left {
+          flex: 4;
+          height: 80%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .imageContainer {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              // background-color: coral;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                width: 25px;
+              }
+            }
+            h2 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 13px;
+            }
+            span {
+              font-size: 12px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          img {
+            width: 400px;
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
 }

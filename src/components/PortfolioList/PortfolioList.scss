@@ -1,0 +1,33 @@
+@import "../../global.scss";
+.portfoliolist {
+  display: flex;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  //   margin-right: 50px;
+  padding: 20px 50px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &.active {
+    background-color: $mainColor;
+    opacity: 0.88;
+    color: white;
+  }
+}
