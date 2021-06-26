@@ -8,10 +8,10 @@ import { useState } from "react";
 import Menu from "./components/Menu/Menu";
 
 import Particles from "react-tsparticles";
+import Test from "./test/Test";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className="App">
       <Particles
@@ -20,7 +20,7 @@ function App() {
         options={{
           background: {
             color: {
-              value: "#ffffff",
+              value: "#000",
             },
           },
           fpsLimit: 60,
@@ -55,10 +55,10 @@ function App() {
           },
           particles: {
             color: {
-              value: "#000000",
+              value: "#ffffff",
             },
             links: {
-              color: "#000000",
+              color: "#ffffff",
               distance: 150,
               enable: true,
               opacity: 0.5,

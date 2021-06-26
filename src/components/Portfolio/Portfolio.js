@@ -8,6 +8,7 @@ import {
   designPortfolio,
   contentPortfolio,
 } from "../../data";
+
 import { DisplayPortfolio } from "../DisplayPortfolio/DisplayPortfolio";
 
 const Portfolio = () => {
@@ -76,48 +77,6 @@ const Portfolio = () => {
             image={item.img}
           ></DisplayPortfolio>
         ))}
-        {/* <div className="item">
-          <img
-            src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div> */}
       </div>
     </div>
   );
