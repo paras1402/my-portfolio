@@ -23,8 +23,10 @@ const Intro = () => {
         "Coding!!",
         "Web Development!!",
         "React..!!",
-        "Firebase",
-        "Space Enthusiast :)",
+        "FullStack Development!!",
+        "Space  :)",
+        "Frontend Development",
+        "Cricket",
       ],
     });
   }, []);
@@ -62,7 +64,7 @@ const Intro = () => {
             whileTap={{ scale: 0.7 }}
             drag={true}
             dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.25 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 2.6 } }}
           />
@@ -73,7 +75,7 @@ const Intro = () => {
             whileTap={{ scale: 0.9 }}
             drag={true}
             dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.29 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1.5 } }}
           />
@@ -90,7 +92,7 @@ const Intro = () => {
           >
             Hi There, I'm
           </motion.h2>
-          <h2></h2>
+
           <motion.h1
             style={{ color: "white" }}
             initial={{ opacity: 0 }}
@@ -106,7 +108,7 @@ const Intro = () => {
             animate="visible"
             transition={{ duration: 1.4 }}
           >
-            Interest in <span ref={textRef}></span>
+            I love <span ref={textRef}></span>
           </motion.h3>
         </div>
         <a href="#portfolio">

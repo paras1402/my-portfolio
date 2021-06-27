@@ -8,7 +8,6 @@ import { useState } from "react";
 import Menu from "./components/Menu/Menu";
 
 import Particles from "react-tsparticles";
-import Test from "./test/Test";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
